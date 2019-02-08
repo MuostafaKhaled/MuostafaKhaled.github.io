@@ -211,13 +211,13 @@ function colorTable(color) {
         td.textContent = c1.toHEX
         tr.appendChild(td);
         var td = document.createElement('td');
-        td.textContent = c1.toHEX
+        td.textContent = c1.toRGB
         tr.appendChild(td);
         var td = document.createElement('td');
         td.textContent = 5 * i + ' %'
         tr.appendChild(td);
         var td = document.createElement('td');
-        td.textContent = c2.getDarker(i).toHEX
+        td.textContent = c2.getDarker(i).toRGB
         tr.appendChild(td);
         var td = document.createElement('td');
         td.textContent = c2.toHEX
