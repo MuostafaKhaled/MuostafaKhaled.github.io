@@ -244,7 +244,7 @@ function colorTable2(color) {
             tr.classList.add('current')
         }
         var td = document.createElement('td');
-        td.style.backgroundColor = c1.hue(i > 0 ? 20 : 0).toHEX
+        td.style.backgroundColor = c1.changeHue(i > 0 ? 20 : 0).toHEX
         td.classList.add('changeColor');
         tr.appendChild(td);
         var td = document.createElement('td');
@@ -301,7 +301,7 @@ function colorTable3(color) {
             tr.classList.add('current')
         }
         var td = document.createElement('td');
-        td.style.backgroundColor = c2.saturation(i>0?5:i).toHEX
+        td.style.backgroundColor = c2.saturate(i>0?5:i).toHEX
         td.classList.add('changeColor');
         tr.appendChild(td);
         var td = document.createElement('td');
@@ -359,7 +359,7 @@ function colorTable4(color) {
             tr.classList.add('current')
         }
         var td = document.createElement('td');
-        td.style.backgroundColor = c2.saturation(i>0?5:i).toHEX
+        td.style.backgroundColor = c2.light(i>0?5:i).toHEX
         td.classList.add('changeColor');
         tr.appendChild(td);
         var td = document.createElement('td');
